@@ -1,0 +1,37 @@
+
+CS2 is the second version of scaling algorithm for minimum-cost
+flow problems. For more detailed description, see "An
+Efficient Implementation of a Scaling Minimum-Cost Flow Algorithm" by
+A.V. Goldberg, J. Algorithms, Vol. 22 (1997), pp. 1--29.
+
+The program is designed to run under BSD UNIX.
+The program reads from the standard input and writes to the standard
+output. Edit makefile to set desirable compiler options.
+Then run "make" to compile the program. Program name is "cs2".
+
+The program can also me compiled under some versions of 
+Microsoft Visual Studio using the following command line:
+cl.exe /O2 /DWINDOWS_TIMER cs2.c
+
+The program takes input in DIMACS format. The input is either a 
+transportation or a minimum-cost circulation vertion of the minimum-cost
+flow problem.
+
+Parameters: If no parameters are given, default values are used.
+There is one optional parameter, scale factor, which must be an integer.
+The default value if SCALE_DEFAULT. Changing this parameter may
+affect performance.
+
+The "cs2" procedure computes an flow after parsing.
+
+The "cs2_cost_restart" recomputes an optimal flow; it is designed for
+use if costs changed after an optimal flow and the corresponding
+price function has been found.
+
+CS2 was developed by Andrew Goldberg (goldberg@intertrust.com) and
+Boris Cherkassky (cher@cher.msk.su).
+
+The program is available on "as is" basis. It is not guaranteed to
+be free of bugs, and the authors assume no responsibility for any
+potential problems. See COPYRIGHT.
+

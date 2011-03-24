@@ -1,0 +1,9 @@
+CS2 version 4.3, 3/5/06
+
+Version 4.1 removes push lookahead to fix a bug in 4.0
+Version 4.2 fixes a bug in optimal dual computation
+Version 4.3 makes the code compile under cygwin (Windows) as well as Linux
+Version 4.4 fixes a small print_solution bug and allows comman-line 
+            Visual Studio compilation
+Version 4.5 does minor bug fixes
+Version 4.6 does more minor bug fixes
