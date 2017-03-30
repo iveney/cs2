@@ -141,7 +141,7 @@ static char *err_message[] =
         -  does service functions
 */
 
-while ( gets ( in_line ) != NULL )
+while (in_line != NULL )
   {
   no_lines ++;
 
